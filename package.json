@@ -1,0 +1,14 @@
+{
+  "name": "communect",
+  "version": "1.0.0",
+  "description": "CommuNect - barangay community information, participation, and service platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset": "node -e \"require('fs').rmSync('data/db.json',{force:true});console.log('Database reset. It will be re-seeded on next start.')\""
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.19.2" },
+  "license": "MIT"
+}
